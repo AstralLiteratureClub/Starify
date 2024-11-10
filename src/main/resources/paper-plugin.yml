@@ -1,0 +1,6 @@
+name: Starify
+version: '1.0.0'
+main: bet.astral.starify.Starify
+api-version: '1.21'
+authors: [ Antritus ]
+website: astral.bet
