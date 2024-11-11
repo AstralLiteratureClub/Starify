@@ -41,7 +41,7 @@ public class RequestVerifyGUI {
             hasVerified.put(player.getUniqueId(), false);
         };
         ClickableBuilder BUTTON_CORRECT = Clickable
-                .builder(Material.GREEN_WOOL)
+                .builder(Material.GREEN_CONCRETE)
                 .title(Translations.GUI_BUTTON_CORRECT_TITLE)
                 .actionGeneral(action -> {
                     action.getMessengerInfo().message(action.getWho(), Translations.MESSAGE_CORRECT);
@@ -51,7 +51,7 @@ public class RequestVerifyGUI {
                 })
                 .priority(1)
                 ;
-        Background BACKGROUND = Background.tooltip(Clickable.builder(Material.RED_WOOL).title(Translations.GUI_BUTTON_WRONG_TITLE)
+        Background BACKGROUND = Background.tooltip(Clickable.builder(Material.RED_CONCRETE).title(Translations.GUI_BUTTON_WRONG_TITLE)
                 .actionGeneral(action -> action.getMessengerInfo().message(action.getWho(), Translations.MESSAGE_WRONG)));
         GUI = InventoryGUI
                 .builder(ChestRows.ONE)
